@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills | Aryan Kamboj</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(-45deg, #89f7fe, #66a6ff, #a1c4fd, #c2e9fb);
+      background-size: 400% 400%;
+      animation: gradient 12s ease infinite;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 0 0 20px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    nav a:hover { color: #ffeb3b; }
+
+    .container {
+      max-width: 1100px;
+      margin: 80px auto;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2.3em;
+      margin-bottom: 40px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      justify-items: center;
+    }
+
+    .skill-card {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 25px;
+      width: 220px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+    .skill-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+    }
+    .skill-card h3 {
+      color: #ffeb3b;
+      margin-bottom: 10px;
+    }
+    .skill-card p {
+      color: #fefefe;
+      font-size: 1em;
+      line-height: 1.4;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #eee;
+      font-size: 0.9em;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="about.html">About</a>
+    <a href="exp.html">Experience</a>
+    <a href="project.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h1>Technical Skills ⚙️</h1>
+    <div class="skills-grid">
+      
+      <div class="skill-card">
+        <h3>Programming Languages</h3>
+        <p>C<br>Python</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Web Technologies</h3>
+        <p>HTML<br>CSS<br>JavaScript</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Frameworks</h3>
+        <p>Django<br>Bootstrap</p>
+      </div>
+
+      <div class="skill-card">
+        <h3>Databases</h3>
+        <p>SQLite3<br>MySQL</p>
+      </div>
+
+
+      <div class="skill-card">
+        <h3>Soft Skills</h3>
+        <p>Team Collaboration<br>Problem Solving<br>Adaptability</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Aryan Kamboj | All rights reserved
+  </footer>
+</body>
+</html>

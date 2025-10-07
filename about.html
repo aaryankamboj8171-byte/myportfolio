@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Aryan Kamboj</title>
+  <style>
+    /* Animated gradient background */
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb);
+      background-size: 400% 400%;
+      animation: gradient 12s ease infinite;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Navbar */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 0 0 20px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    /* About section */
+    .about {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .about img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid rgba(255,255,255,0.4);
+      box-shadow: 0 0 20px rgba(255,255,255,0.3);
+      object-fit: cover;
+      transition: transform 0.3s;
+    }
+    .about img:hover {
+      transform: scale(1.05);
+    }
+    .about h1 {
+      margin-top: 20px;
+      font-size: 2.2em;
+      letter-spacing: 1px;
+    }
+    .about p {
+      max-width: 700px;
+      line-height: 1.7;
+      font-size: 1.1em;
+      margin-top: 20px;
+      color: #fdfdfd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #eee;
+      font-size: 0.9em;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="about.html">About</a>
+    <a href="exp.html">Experience</a>
+    <a href="project.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="about">
+    <img src="img/aryannnn.jpg" alt="Aryan Kamboj" />
+    <h1>Hi, I'm Aryan Kamboj 👋</h1>
+    <p>
+      I’m an enthusiastic and motivated B.Tech Computer Science Engineering student at 
+      Dewan V.S Institute of Engineering and Technology. I have strong academic knowledge 
+      and hands-on exposure in <b>Full Stack Development</b> with Python, Django, HTML, CSS, 
+      JavaScript, and MySQL.
+    </p>
+    <p>
+      I completed my Full Stack Development Internship at <b>Softpro India Computer Technologies Pvt. Ltd.</b>, 
+      where I worked on real-world projects, building responsive applications and backend APIs.
+      I love solving problems, learning new technologies, and turning ideas into practical solutions.
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Aryan Kamboj | All rights reserved
+  </footer>
+</body>
+</html>

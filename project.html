@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Aryan Kamboj</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(-45deg, #fbc2eb, #a6c1ee, #ff9a9e, #fad0c4);
+      background-size: 400% 400%;
+      animation: gradient 12s ease infinite;
+      color: #fff;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 0 0 20px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    nav a:hover { color: #ffeb3b; }
+
+    .container {
+      max-width: 1000px;
+      margin: 80px auto;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 40px;
+      animation: fadeInDown 1s ease forwards;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 40px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      transition: transform 0.3s, box-shadow 0.3s;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .project-card:nth-child(2) { animation-delay: 0.2s; }
+    .project-card:nth-child(3) { animation-delay: 0.4s; }
+    .project-card:nth-child(4) { animation-delay: 0.6s; }
+    .project-card:nth-child(5) { animation-delay: 0.8s; }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+    }
+
+    .project-card h2 {
+      color: #ffeb3b;
+      margin-bottom: 15px;
+    }
+
+    .project-card p {
+      line-height: 1.6;
+      font-size: 1.05em;
+      color: #fefefe;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #eee;
+      font-size: 0.9em;
+      opacity: 0.7;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="about.html">About</a>
+    <a href="exp.html">Experience</a>
+    <a href="project.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h1>My Projects 💻</h1>
+
+    <div class="project-card">
+      <h2>Online Learning Platform (Biotech Park, Lucknow)</h2>
+      <p><b>Technologies:</b> Python (Django), SQLite3, HTML, CSS, JavaScript</p>
+      <p>
+        Developed a cloud-based Learning Management System (LMS) with modules for login, 
+        course management, student data handling, credentials, and news updates.
+      </p>
+      <p>
+        Integrated email alerts for new registrations and updates, improving communication efficiency.
+        The platform enhanced accessibility for over <b>250+ centers</b> and managed <b>113+ courses</b> seamlessly.
+      </p>
+      <p>
+        Focused on clean UI, backend optimization, and database design to improve user experience and scalability.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h2>YouTube Clone</h2>
+      <p><b>Technologies:</b> HTML, CSS, JavaScript</p>
+      <p>
+        Built a responsive front-end clone of YouTube with a modern layout, video thumbnail grid, 
+        sidebar navigation, and dark theme styling for better user experience.
+      </p>
+      <p>
+        Focused on pixel-perfect UI design and responsive media queries for all screen sizes.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h2>Music Player</h2>
+      <p><b>Technologies:</b> HTML, CSS, JavaScript</p>
+      <p>
+        Designed an interactive music player allowing users to play, pause, skip, and control volume.
+        Added custom animations, rotating album art, and dynamic song info display.
+      </p>
+      <p>
+        Emphasized on seamless user interaction using JavaScript event handling.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h2>To-Do List App</h2>
+      <p><b>Technologies:</b> HTML, CSS, JavaScript</p>
+      <p>
+        Created a simple and efficient To-Do List web app for task management. 
+        Features include adding, editing, deleting, and marking tasks as completed.
+      </p>
+      <p>
+        Implemented local storage to save user tasks even after browser refresh.
+      </p>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 Aryan Kamboj | All rights reserved
+  </footer>
+</body>
+</html>
